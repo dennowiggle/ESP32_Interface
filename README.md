@@ -13,7 +13,6 @@ ESP32-s3 based board to provide WiFi enabled features.
 * Off-board SPI using header connection to future board(s) such as FPGA video card.
   - programming FPGA plus additional SPI-FPGA debug features if needed.
 * One byte, 8 bit, message register implemented in logic for handshaking with Z80.
-  - If the 8 bit message port interface to/from the Z80 Retro! is not needed five IC's can be no stuff, saving cost.
   - uses IORQ addreess line 0xA4.
 * USB OTG is present in hardware.
 * SD card slot for future possiblities.
