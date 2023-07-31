@@ -1062,6 +1062,13 @@
     (uuid fe73c226-39df-44de-8857-c6df30e18ff0)
   )
 
+  (text_box "Do not connect UART0_RX to a TX source as \nthe ESP32 USB-Serial IC is driving this signal."
+    (at 35.56 93.98 0) (size 50.8 5.08)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 2947526b-00dd-474e-bf4d-ac32c637c645)
+  )
   (text_box "RS232"
     (at 20.32 20.32 0) (size 83.82 15.24)
     (stroke (width 1.27) (type default))
@@ -1069,29 +1076,22 @@
     (effects (font (size 5.08 5.08) (thickness 1.016) bold) (justify left top))
     (uuid 5af547ac-7b5b-4a70-90dc-48f0e940c378)
   )
-  (text_box "If default jumpers are selected, external TTL \nlevel RS232 can be connected to pins 5 & 6 \n+ GND for ESP32 debug/download port connection.\n"
-    (at 33.02 157.48 0) (size 53.34 7.62)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (effects (font (size 1.27 1.27)) (justify left top))
-    (uuid a40144e2-79e6-478f-a71a-e37ab19ed396)
-  )
-  (text_box "A place to add connection to external \nTTL level RS232 modules\n"
+  (text_box "A place to add connection to external \nTTL level RS232 modules.\n"
     (at 35.56 86.36 0) (size 43.18 5.08)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid a9830669-9566-45dc-8fdc-f871edb6b55e)
   )
-  (text_box "J401 RS232 Output Options\nTo select ESP32 Console add jumpers\n1-3, 2-4\nTo select ESP32 Debug messages add jumpers\n3-5, 4-6\nDefault jumper settings\n1-3, 2-4\n"
+  (text_box "J401 RS232 Output Options\nTo select ESP32 Console add jumpers\n3-5, 4-6 (Uart 1 selected)\nTo select ESP32 Debug messages add jumper\n1-3      (Uart 0 selected)\nDefault jumper settings = Console\n3-5, 4-6 (Uart 1)\n"
     (at 33.02 134.62 0) (size 48.26 17.78)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid c9e290a2-6cf5-48b1-a6e5-93d48f23c413)
   )
-  (text_box "ESP32 Debug / Download option on uart 1 set in SW.\n"
-    (at 33.02 170.18 0) (size 53.34 5.08)
+  (text_box "ESP32 Console / Download option on uart 1 set in SW.\n"
+    (at 33.02 154.94 0) (size 58.42 5.08)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))

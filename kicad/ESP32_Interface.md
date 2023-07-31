@@ -1,7 +1,7 @@
 
 # ESP32_Interface.kicad_sch
 
-## 6/12/2023 5:54:20 PM
+## 7/9/2023 3:29:03 PM
 
 ## Eeschema 7.0.2
 
@@ -22,7 +22,7 @@ J401, J403 | 2 | DB9_Male_MountingHoles | AE10970-ND | http://www.assmann-wsw.co
 J402, J404 | 2 | Conn_02x03 | 2057-PH2-06-UA-ND | https://app.adam-tech.com/products/download/data_sheet/202065/ph2-xx-ua-data-sheet.pdf | Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 J501 | 1 | GCT_MEM2075-00-140-01-A_DP | 2073-MEM2075-00-140-01-ACT-ND | https://gct.co/files/specs/mem2075-spec.pdf | 
 J502 | 1 | USB_B_Micro | 732-5960-1-ND | https://www.we-online.com/components/products/datasheet/629105150521.pdf | USB Micro Type B connector
-J503 | 1 | Conn_02x05 | 612-TSW-105-20-G-D-ND | https://suddendocs.samtec.com/catalog_english/tsw_th.pdf | Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+J503 | 1 | Conn_02x05_Right_Angle | 2057-PH2RA-10-UA-ND | https://app.adam-tech.com/products/download/data_sheet/200508/ph2ra-xx-ua-data-sheet.pdf | Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 Q201, Q301, Q302, Q303 | 4 | PN2222 | 1514-PN2222APBFREE-ND | https://my.centralsemi.com/datasheets/PN2221-2222A.PDF | NPN transistor, emitter/base/collector
 R102, R201, R305 | 3 | 1K | 311-1.0KARCT-ND | https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf | Resistor, US symbol
 R301, R302, R303, R308, R309, R501, R502, R503, R504, R507, R511, R516, R517, R518 | 14 | 10K | 311-10KARCT-ND | https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf | Resistor, US symbol
