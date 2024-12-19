@@ -1,0 +1,161 @@
+/*************************************************************************
+ * CSS style sheet for Z80-Retro ESP Programmer Web Interface
+ * Code & ESP Programmer Board by Denno Wiggle
+ * Z80-Retro project by John Winans
+ *  - https://github.com/Z80-Retro
+ * 
+ *************************************************************************/     
+            
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+    line-height: 30px;
+    color: #262626;
+    background: #56b3e9;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+}                                            
+
+#z80retro label {
+    margin: 0 auto;
+    display:block;
+    position: relative;
+    text-align: left;
+    width:60%;
+}
+
+#z80retro input {
+    display:block;
+    position: relative;
+    padding: 8px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin : 0 auto;
+    display:block;
+    width:60%;
+/*   height:calc(1.5em + .75rem + 2px); */
+    border:1px solid #ccc;
+}
+
+#z80retro {                                             
+    background: #f9f9f9;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}     
+
+/* Screens less that 599 px such as mobile     */
+/* Comes from our setting of max-width: 600px; */
+
+@media only screen and (max-width : 599px) {
+    #z80retro {
+        padding: 2.5vw;
+    }
+}         
+#z80retro h1 {
+    display: block;
+    font-size: 2.5em;
+/*    font-size: 2vw; */
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    text-align: center
+}
+
+#z80retro h2 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 1.5em;
+/*    font-size: 1vw; */
+    font-weight: 400;
+    text-align: center
+}         
+
+@media only screen and (max-width : 599px) {
+  #z80retro h1 {
+    font-size: 9vw
+  }
+  #z80retro h2 {
+    font-size: 4vw;
+  }
+}         
+
+#z80retro legend {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #e69f00;
+    padding: 0.5em 0;
+}
+
+@media only screen and (max-width : 599px) {
+    #z80retro legend {
+        font-size: 5vw;
+    }
+}         
+
+#z80retro p {
+    margin: 0 0 10px 0;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+fieldset {
+    border: medium none !important;
+    margin-top: 15px;
+}
+
+#z80retro button {
+    cursor: pointer;
+    width: 60%;
+    border: none;
+    background: #e69f00;
+    /* border-color:#e69f00; */
+    border-radius:.5rem;
+    
+    color: #fff;
+    margin: 5px 0px;
+    padding: 10px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif; 
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width : 599px) {
+    #z80retro button {
+        font-size: 4vw
+    }
+}         
+
+#z80retro button:hover {
+    background: #b36b00;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#z80retro button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#z80retro button:disabled {
+    background-color:grey;
+}
+

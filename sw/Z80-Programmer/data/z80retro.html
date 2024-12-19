@@ -1,0 +1,55 @@
+<!-- Z80-Retro! ESP Programmer Web Interface
+   - Code & ESP Programmer Board by Denno Wiggle
+   - Z80-Retro project by John Winans
+   - https://github.com/Z80-Retro
+-->
+<!DOCTYPE html>
+    <head>
+        <title>Z80 Retro! Programmer</title> 
+        <link rel='stylesheet' type='text/css' href='wtm.css'>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>        
+        <script type="text/javascript" src="z80retro.js"></script>
+    </head> 
+    <body>
+        <main class='content'>
+            <form id='z80retro' method='post' accept-charset='utf-8' enctype="multipart/form-data"> 
+                <h1>Z80 Retro! Programmer</h1>
+
+                <h2>Firmware</h1>
+
+                <label>Z80 Flash Image</label>
+                <input type='file' id='flashFileZ80' onchange="validateSizeZ80(this)" name='firmwareZ80'> 
+                <button type=button onclick="uploadFileZ80(this);" id='programButtonZ80'>Program Z80 Flash</button>
+                <div id='progressAreaZ80'>
+                    <br/>
+                </div>
+
+                <button type=button onclick="getBinImage();" id='getBinButton'>Download Saved Z80 Image</button>
+                <div id='getBinResult'>
+                    <br/>
+                </div>
+
+                <label>FPGA Flash Image</label>
+                <input type='file' id='flashFileFpga' onchange="validateSizeFpga(this)" name='firmwareFpga'> 
+                <button type=button onclick="uploadFileFpga();" id='programButtonFpga'>Program FPGA Flash</button>
+                <div id='progressAreaFpga'>
+                    <br/>
+                </div>
+
+                <h2>Reset</h2>
+
+                <button type=button onclick="resetZ80();" id='resetButtonZ80'>Reset Z80 Retro!</button>
+                <div id='resetZ80Result'>
+                    <br/>
+                </div>
+
+                <button type=button onclick="resetEsp();" id='resetButtonEsp'>Reset ESP Programmer</button>
+                <div id='resetEspResult'>
+                    <br/>
+                </div>
+                <br/>
+            </form>
+        </main>
+    </body>
+</html>
