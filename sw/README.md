@@ -12,4 +12,5 @@ The ESP32-S3 SW is in a platformio project format. If using VS Code there is a p
   - Open a webpage at this address to set the WiFi parameters for WiFi client mode in the local network environment.
   - Power cycle.
   - On the local WiFi router find the new IP address that the DHCP server assigned.
- 
+* Connect local computer to local WiFi network
+  - Open webage and enter the IP address assigned by DHCP server to the Z80-Programmer! 
