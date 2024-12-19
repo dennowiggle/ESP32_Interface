@@ -1,3 +1,9 @@
+/*************************************************************************
+ * 
+ *    Code copied from user bitfixer from the romulator project, 
+ *     - https://github.com/bitfixer/bf-romulator
+ * 
+ *************************************************************************
 #include "xmodem.h"
 #include <Arduino.h>
 #include <LittleFS.h>
