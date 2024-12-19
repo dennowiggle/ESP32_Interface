@@ -5,7 +5,7 @@ Facilitate learning the Z80 Retro! hardware and software.
 The ESP32-S3 SW is in a platformio project format. If using VS Code there is a platformio plugin. Upon opening the project folder the project should self configure.
 
 ## Programming
-* To program the board use the JTAG port on the module.
+* To program the board use the USB JTAG port on the module.
   - First upload the filesystem.
   - Then upload the code.
   
