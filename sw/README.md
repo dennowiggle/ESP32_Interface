@@ -4,6 +4,11 @@ Facilitate learning the Z80 Retro! hardware and software.
 ## Information:
 The ESP32-S3 SW is in a platformio project format. If using VS Code there is a platformio plugin. Upon opening the project folder the project should self configure.
 
+## ESP32-S3-DevkitC
+* There are two versions of this dev kit supported - V1 and V1.1. If using a v1.1 module make the following change in `defines.h` for the LED to operate as expected as the two modules use different GPIO pins.
+
+  ```#define ESP32_S3_DEVKITC_VERSION (1.1)```
+
 ## ESP32 Module Programming
 * To program the board use the USB JTAG port on the module.
   - First upload the filesystem.
